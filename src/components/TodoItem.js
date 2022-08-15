@@ -22,7 +22,7 @@ export default class TodoItem extends Component {
         onChange={() => this.props.handleChangeProps(id)}
       />
       <span style={completed ? completedStyle : null}>{title}</span>
-      <button onClick={() => this.props.deleteTodoProps(id)}>
+      <button className="deleteBtn" onClick={() => this.props.deleteTodoProps(id)}>
   Delete
 </button>
     </li>    )
